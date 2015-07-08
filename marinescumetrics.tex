@@ -1,0 +1,38 @@
+\begin{table}[!h]
+\centering
+\begin{tabular}{L{4cm}|L{12cm}}
+ AMW -- Average Method Weight & The average static complexity of all methods in a class.\cite{Marinescu02} McCabe's cyclomatic number~\cite{McCabe76} is used to quantify the method's complexity. \\
+ \midrule
+ ATFD -- Access to Foreign Data & Then number of attributes from unrelated classes that are accessed directly or by invoking accessor methods.\cite{Marinescu02} \\
+ \midrule
+ BOvR -- Base Class Overriding Ratio & The number of methods of the measures class that override methods from the base class, divded by the total number of methods in the class.\cite{Lanza2006} \\
+ \midrule
+ BUR -- Base Class Usage Ration & The numebr of inheritance-specific members used by the measured class, divided by the total number of inheritance-specific members from the base class.\cite{Lanza2006} \\
+ \midrule
+ CC -- Changing Classes & The number of classes in which the methods that call the measured method are defined in~\cite{Marinescu02}.\\
+ \midrule
+ CM -- Changing Methods & The number of disctinct methods that call the measured method \cite{Marinescu02} \\
+ \midrule
+ CYCLO -- McCabe's Cyclomatic Number & The number of linearly-independent paths through an operation\cite{McCabe76} \\
+ \midrule
+ FDP -- Foreign Data Providers & The number of classes in which the attributed accessed -- in conformity with the ATFD metric -- are defined.\cite{Lanza2006} \\
+ \midrule
+ LAA -- Locality of Attribute Accesses & The number of attributes from the method's deifnition class, divided by the total number of variables accessed (including attributes used via accessor methods, see ATFD), whereby the number of local attributes accessed is computed in conformity with the LAA specifications.\cite{Lanza2006} \\
+ \midrule
+ MAXNESTING -- Maximum Nesting Level & The maximum nesting Level of control structures within an operation\cite{Lanza2006}\\
+ \midrule
+ NOAM -- Number of Accessor Methods & The number of accessor (getter and setter) methods of a class\cite{Lanza2006}\\
+ \midrule
+ NOM -- Number of Methods & The number of methods of a class. \\
+ \midrule
+ NOPA -- Number of Public Attributes & the number of public attributes of a class \\
+ \midrule
+ NProtM -- Number of Protected Members & The number of protected methods and attributes of a class. \\
+ \midrule
+ TCC - Tight Class Cohesion & The relative number of method pairs of a class that access in common at least one attribute of the measured class.\cite{Bieman1995} \\
+ \midrule
+ WOC - Weight Of a Class & The number of ''functional'' public methods divided by the total number of public members\cite{Marinescu02}.
+\end{tabular}
+\caption{Marinescu metric definitions~\cite{Lanza2006}}
+\label{tab:mmdefs}
+\end{table}
